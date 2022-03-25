@@ -4,7 +4,7 @@ require('dotenv').config();
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 client.once('ready', () => {
-	console.log('Ready!');
+	console.log('Up and running!');
 });
 
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
