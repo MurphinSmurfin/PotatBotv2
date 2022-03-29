@@ -7,7 +7,7 @@ module.exports = {
 
 		const commandName = message.content.split(' ')[0].slice(prefix.length);
 
-		const command = client.commands.get(commandName);
+		const command = client.commands.get(commandName) || client.commands.find(a => a.aliases && a.aliases.includes(commandName));
 
 		if (!command) return;
 

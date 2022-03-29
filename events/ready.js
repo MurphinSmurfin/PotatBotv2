@@ -3,6 +3,6 @@ module.exports = {
 	once: true,
 	execute(client) {
 		console.log('French Fries is online!');
-		client.user.setActivity('Heating the oil | fhelp', { type: 'PLAYING' });
+		client.user.setActivity('the oil heat up | fhelp', { type: 'WATCHING' });
 	},
 };
